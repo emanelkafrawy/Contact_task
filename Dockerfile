@@ -25,6 +25,6 @@ COPY data*.json ./
 RUN npm install
 
 COPY --from=builder node/app/dist/ dist/
-EXPOSE 8080
+EXPOSE 3000
 
 CMD ["node","dist/main.js"]
